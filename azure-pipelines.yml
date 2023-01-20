@@ -33,7 +33,7 @@ steps:
   inputs:
     command: 'build'
     arguments: '--no-restore --configuration $(buildConfiguration)'
-    projects: '../**/*tests.csproj'
+    projects: '**/*tests.csproj'
 
 - task: DotNetCoreCLI@2
   displayName: 'Run unit tests'
